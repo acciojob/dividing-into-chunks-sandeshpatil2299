@@ -23,5 +23,9 @@ const divide = (arr, n) => {
 	return result
 };
 
-const n = prompt("Enter n: ");
+const n = prompt("Enter n: ")
+
+const arr = prompt("Enter numbers separated by commas:")
+  .split(",")
+  .map(s => Number(s.trim()));
 alert(JSON.stringify(divide(arr, n)));
